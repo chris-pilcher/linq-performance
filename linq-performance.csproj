@@ -2,10 +2,14 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>linq_performance</RootNamespace>
+        <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+        <RootNamespace>Linq.Performance</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.2"/>
+    </ItemGroup>
 
 </Project>
